@@ -1,0 +1,110 @@
+	body{
+		font-size: 100%; /*em = 16px*/
+		padding: 0;
+		margin: 0;
+	}
+
+	.logo{
+		width: 30vh;
+	}
+
+	.carousel-item {
+		max-height: 90vh;
+	}
+
+	h1 {
+		font-size: 1em;
+	}
+
+.nav-tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 1.5rem; /*Utiliza siempre 100%*/
+}
+
+.flexbox {
+	display: flex;
+	flex-direction: column; /*Column alinea verticalmente y row horizontalmente*/
+	align-items: center;
+}
+.container-fluid {
+	align-items: center;
+}
+
+footer{
+	padding: 0;
+	margin: 0;
+}
+#foot{
+	/*margin: 1.5rem 3rem;*/
+	background-color: lightgray;
+}
+#copyright{
+	background-color: gray;
+}
+.columna {
+	margin-top: 1rem;
+	font-size: 1em;
+}
+
+
+
+	/* Media query */
+
+/*	// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+		.carousel-item {
+			max-height: 70vh;
+		}
+		body{
+			font-size: 110%
+		}
+		.columna ul li{
+			margin-top: 1rem;
+			font-size: 1em;
+		}
+
+}
+	
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.carousel-item {
+		max-height: 70vh;
+	}
+
+	body{
+		font-size: 120%
+	}
+	.columna ul li{
+		margin-top: 1rem;
+		font-size: .8em;
+	}
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.carousel-item {
+		max-height: 70vh;
+	}
+
+	body{
+		font-size: 140%
+	}
+	.columna ul li{
+		margin-top: 1rem;
+		font-size: .5em;
+	}
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.carousel-item {
+		max-height: 70vh;
+	}
+
+	body{
+		font-size: 150%
+	}
+}
